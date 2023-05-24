@@ -1,0 +1,327 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: black;
+    height: 60px;
+    z-index: 1;;
+    width: 100%;
+    opacity: 0.8;
+}
+
+.navbar img {
+  width: 200px;
+  height: 50px;
+  display: block;
+  padding-left: 20px;;
+}
+
+.navbar ul {
+  background-color: wheat;
+}
+
+.navbar-nav li {
+  padding: 7px 15px;
+}
+
+.navbar-nav li a { 
+  color: darkred;
+  font-family: Arial;
+  font-size: 20px;
+}
+
+.navbar-nav li a:hover {
+  color: black;
+}
+
+.navbar-nav li a:focus {
+  color: black;  
+}
+
+button .navbar-toggler {
+  padding-left: 30px;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  height: 550px;
+}
+
+.banner .title {
+  background: black;
+  color: white;
+  padding: 30px;
+  font-style: italic;
+  font-weight: bold;
+  font-family: Lucida Console;
+  position: absolute;
+  left: 5%;
+  top: 25%;
+  width: 400px;
+} 
+
+.banner .title h3 {
+  font-size: 25px;
+}
+
+.cards-div{
+  justify-content: space-evenly;
+}
+
+.cards {
+  background-color: white;
+  padding: 30px 20px;
+}
+
+.cards .card-1, .card-2, .card-3, .card-4 {
+  width: 280px;
+}
+
+.cards .card-1 {
+  background-color: #FEB614;
+}
+
+.cards .card-2 {
+  background-color: darkred;
+}
+
+.cards .card-3 {
+  background-color: #8db600;
+}
+
+.cards .card-4 {
+  background-color: black;
+}
+
+.cards .card-body a {
+  color: white;
+  text-decoration: none;
+}
+
+.cards .card-body a i {
+  color: darkred;
+}
+
+.cards .card-body a:hover {
+  color: darkred;
+}
+
+.cards .card i {
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+.menu-subheading {
+  font-style: italic;
+}
+
+.menu-heading {
+  list-style-type: georgian;
+}
+
+.menu-subheading {
+  list-style-type: none;
+}
+
+.appetizers:hover {
+  background-color: #8db600;
+  color: black;
+  border-radius: 3px;
+}
+
+.entrees:hover {
+  background-color: #8db600;
+  color: black;
+  border-radius: 3px;
+}
+  
+.desserts:hover {
+  background-color: #8db600;
+  color: black;
+  border-radius: 3px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.form {
+  flex: 1;
+  background-color: black;
+  font-size: 20px;
+  width: 75%;
+}
+
+.form-content {
+  padding: 30px 60px;
+  color: #FEB614;
+}
+
+.form-content input[type=text] {
+  border-radius: 10px;
+  padding-left: 10px;
+  width: 250px;
+  height: 40px;
+}
+
+.form-content input[type=email] {
+  border-radius: 10px;
+  padding-left: 10px;
+  width: 250px;
+  height: 40px;
+}
+
+.form-content input[type=submit] {
+  border-radius: 10px;
+  height: 40px;
+  color: white;
+  background-color: #FEB614;
+  width: 100px;
+}
+
+.form-content input[type=submit]:hover {
+  height: 45px;
+  width: 105px;
+}
+
+.socials {
+  background-color: #FEB614;
+  font-size: 20px;
+  width: 25%;
+}
+
+.socials ul {
+  padding-top: 70px;
+}
+
+.socials ul li {
+  list-style-type: none;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.socials ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.socials ul li a:hover {
+  text-decoration: underline;
+}
+  
+/* responsivenes */
+
+@media screen and (max-width: 1400px) {
+  .cards .card-1, .card-2, .card-3, .card-4 {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .cards .card-1, .card-2, .card-3, .card-4 {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .cards .card-1, .card-2, .card-3, .card-4 {
+    width: 700px;
+  }
+
+  .flex-container {
+    display: inline;
+  }
+
+  .form, .socials {
+    width: 100%;
+  }
+
+  .socials {
+    height: 60px;
+  }
+
+  .socials ul {
+    padding-top: 15px;
+  }
+  
+  .socials ul li {
+    display: inline;
+    padding: 0 50px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .cards .card-1, .card-2, .card-3, .card-4 {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    opacity: 0.95;
+  }
+  .navbar img {
+    display: none;
+  }
+    
+  .banner img {
+    height: 400px;
+  }
+  
+  .banner .title {
+    padding: 20px;
+    top: 15%;
+    width: 300px;
+  } 
+  
+  .banner .title h3 {
+    font-size: 20px;
+  }
+
+  .cards .card-1, .card-2, .card-3, .card-4 {
+    width: 500px;
+  }
+
+  .socials ul li {
+    padding: 0 30px;
+  } 
+}
+
+@media screen and (max-width: 576px) {
+  .cards .card-1, .card-2, .card-3, .card-4 {
+    max-width: 100%;
+  }
+
+  .banner img {
+    height: 300px;
+  }
+  
+  .banner .title {
+    padding: 10px;
+    top: 10%;
+    width: 250px;
+  } 
+  
+  .banner .title h3 {
+    font-size: 15px;
+  }
+
+  .socials ul li {
+    padding: 0 20px;
+  }
+}
+
+	
+
+ 
+
+
+
+
+
